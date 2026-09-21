@@ -1,5 +1,23 @@
 # @cloudflare/containers-shared
 
+## 0.19.0
+
+### Minor Changes
+
+- [#15700](https://github.com/cloudflare/workers-sdk/pull/15700) [`275184d`](https://github.com/cloudflare/workers-sdk/commit/275184d38b936c7ebed60d282fc33f002b4ca7b1) Thanks [@KianNH](https://github.com/KianNH)! - Export shared Container SSH APIs
+
+  Expose `sshCommand`, `containersSshOptions`, `shouldUseStdio`, and the `ContainerSshArgs` type so CLI consumers can reuse Container SSH connection and proxy handling.
+
+### Patch Changes
+
+- [#15700](https://github.com/cloudflare/workers-sdk/pull/15700) [`275184d`](https://github.com/cloudflare/workers-sdk/commit/275184d38b936c7ebed60d282fc33f002b4ca7b1) Thanks [@KianNH](https://github.com/KianNH)! - Fix Container SSH connection setup and shutdown
+
+  Prevent SSH connections from stalling during setup and ensure proxy processes exit when sessions close.
+
+- Updated dependencies [[`ec5251a`](https://github.com/cloudflare/workers-sdk/commit/ec5251a92f561dbbba77694ac954d85298f44039)]:
+  - @cloudflare/config@0.17.0
+  - @cloudflare/build-output-utils@0.7.1
+
 ## 0.18.0
 
 ### Minor Changes
